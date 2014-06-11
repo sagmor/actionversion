@@ -1,5 +1,6 @@
-require "action_version/version"
+require 'active_support/concern'
 
-module ActionVersion
-  # Your code goes here...
-end
+require "action_version/version"
+require "action_version/versionable"
+require "action_version/middleware"
+require "action_version/controller"

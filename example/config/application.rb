@@ -9,5 +9,6 @@ Bundler.require(*Rails.groups)
 
 module Example
   class Application < Rails::Application
+    config.middleware.use ActionVersion::Middleware, default: Time
   end
 end
