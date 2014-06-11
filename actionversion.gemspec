@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ActionVersion::VERSION
   spec.authors       = ["Seba Gamboa"]
   spec.email         = ["me@sagmor.com"]
-  spec.summary       = %q{Elegant versionning of APIs}
-  spec.description   = %q{ActionVersion provides a simple and elegant way of versionning REST APIs}
+  spec.summary       = %q{Elegant versioning of APIs}
+  spec.description   = %q{ActionVersion provides a simple and elegant way of versioning REST APIs}
   spec.homepage      = "https://github.com/sagmor/actionversion"
   spec.license       = "MIT"
 
