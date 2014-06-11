@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'action_version/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "action_version"
+  spec.name          = "actionversion"
   spec.version       = ActionVersion::VERSION
   spec.authors       = ["Seba Gamboa"]
   spec.email         = ["me@sagmor.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Elegant versionning of APIs}
+  spec.description   = %q{ActionVersion provides a simple and elegant way of versionning REST APIs}
+  spec.homepage      = "https://github.com/sagmor/actionversion"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
