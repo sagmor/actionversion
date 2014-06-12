@@ -29,6 +29,10 @@ describe ActionVersion::Versionable do
       expect(NumbersFixture).to be_versioned
     end
 
+    it "returns false if it's a subclass" do
+      expect(Class.new(NumbersFixture)).not_to be_versioned
+    end
+
     it "returns false if class has no version defined" do
       expect(Class.new{ include ActionVersion::Versionable }).not_to be_versioned
     end
