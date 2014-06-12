@@ -2,6 +2,7 @@ module ActionVersion
   module Controller
     extend ActiveSupport::Concern
     include ActionVersion::Versionable
+    include ActionVersion::RequestVersion
 
     class CallProxy
       def initialize(klass,action)
@@ -10,9 +11,10 @@ module ActionVersion
       end
 
       def call(env)
-        request_version = env[ActionVersion::Middleware::KEY]
+        version = ActionVersion.request_version(env)
+        version ||= @klass.default_version
 
-        @klass.version(request_version).action(@action).call(env)
+        @klass.version(version).action(@action).call(env)
       end
     end
 
