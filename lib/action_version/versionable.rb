@@ -55,6 +55,7 @@ module ActionVersion
           klass.send :class_eval, &block
 
           versions[version_id] = klass
+          self.const_set("V#{version_id}", klass)
 
           klass
         end
