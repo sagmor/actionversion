@@ -11,7 +11,7 @@ like Foursquare's API but supports incremental versions as well.
 
 Add this line to your application's Gemfile:
 
-    gem 'action_version'
+    gem 'actionversion'
 
 And then execute:
 
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install action_version
+    $ gem install actionversion
 
 ## Usage
 

@@ -62,4 +62,3 @@ module ActionVersion
     end
   end
 end
-
